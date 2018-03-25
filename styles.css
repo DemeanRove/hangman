@@ -1,0 +1,36 @@
+:root {
+      --desktop-margin: 0em;
+      --font-size: 85%;
+}
+
+@media screen and (min-width: 600px) {
+      :root {
+            --desktop-margin: 1em;
+            --font-size: 100%;
+      }
+}
+
+* {
+      font-family: 'Roboto'; 
+      /*Titles use 'Fascinate Inline'*/
+      font-size: var(--font-size);
+}
+
+.brand-logo {
+      font-family: 'Fascinate Inline';
+}
+
+.game p {
+      text-align: center;
+      font-family: 'Fascinate Inline';
+      font-size: 4.5em;
+      letter-spacing: 0.3em;
+      word-spacing: 0.6em;
+      word-wrap: normal;
+}
+
+.col {
+      margin-bottom: 1.5em;
+      margin-right: var(--desktop-margin);
+      margin-left: var(--desktop-margin);
+}
