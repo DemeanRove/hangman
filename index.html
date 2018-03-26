@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
       <!-- Compiled and minified JavaScript -->
       <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Roboto" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,7 +25,7 @@
                   </ul>
             </div>
             <div class="divider"></div>
-            <div class="nav-content"> <!-- Difficulty Navbar -->
+            <div class="nav-content z-depth-1"> <!-- Difficulty Navbar -->
                   <ul class="tabs tabs-transparent">
                         <li class="tab active"><a href="#">Easy</a></li>
                         <li class="tab"><a href="#">Medium</a></li>
@@ -35,37 +36,40 @@
 
       <div class="container">
             <div class="row">
-                  <div class="col s12 game">
-                        <p class="flow-text">Lives: </p>
+                  <div class="col s12 game scale-transition scale-out">
+                        <p class="score"></p>
+                        <p class="flow-text tooltipped data-position="bottom" data-tooltip="Keyboard input works too!"" style="color: red"></p>
                         <p class="flow-text"></p>
-                        <p class="flow-text" style="color:red"></p>
+                        <div class="wrapper scale-transition scale-out">
+                              <a class="btn-large pulse"><i class="material-icons left">refresh</i>Retry</a>
+                        </div>
                   </div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">A</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">B</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">C</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">D</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">E</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">F</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">G</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">H</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">I</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">J</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">K</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">L</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">M</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">N</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">O</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">P</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">Q</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">R</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">S</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">T</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">U</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">V</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">W</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">X</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">Y</a></div>
-                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light">Z</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">A</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">B</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">C</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">D</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">E</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">F</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">G</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">H</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">I</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">J</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">K</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">L</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">M</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">N</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">O</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">P</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">Q</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">R</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">S</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">T</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">U</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">V</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">W</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">X</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">Y</a></div>
+                  <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">Z</a></div>
             </div>
       </div>
 

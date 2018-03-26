@@ -21,6 +21,10 @@
       font-family: 'Fascinate Inline';
 }
 
+.flow-text span {
+      font-family: 'Fascinate Inline';
+}
+
 .game p {
       text-align: center;
       font-family: 'Fascinate Inline';
@@ -30,8 +34,23 @@
       word-wrap: normal;
 }
 
+.wrapper {
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 20px;
+      display: flex;
+}
+
 .col {
       margin-bottom: 1.5em;
       margin-right: var(--desktop-margin);
       margin-left: var(--desktop-margin);
+}
+
+.flow-text {
+      line-height: 25%;
+}
+
+.score {
+      line-height: 15%;
 }
