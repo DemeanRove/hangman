@@ -3,7 +3,8 @@
       --font-size: 85%;
 }
 
-@media screen and (min-width: 600px) {
+/* Desktop variable values */
+@media screen and (min-width: 600px) { 
       :root {
             --desktop-margin: 1em;
             --font-size: 100%;
