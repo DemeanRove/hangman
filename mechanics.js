@@ -5,7 +5,7 @@ let guessed = [] //Guessed letters
 let lives = 10
 let easyWords = "easyWords.json"
 let mediumWords = "mediumWords.json"
-let hardWords = "easyWords.json"
+let hardWords = "hardWords.json"
 let temp = ""
 let actual = ""
 let level = ".easy"
@@ -109,6 +109,23 @@ function generateMedium(mediumWords) {
    })
 }
 
+function generateHard(hardWords) {
+   temp = ""
+   $.getJSON(hardWords, function(data) {
+      let wordVal = Math.floor(Math.random() * data.length)
+      actual = data[wordVal].word.toUpperCase()
+      for (let i = 0; i < actual.length; i++) {
+         if (actual.substring(i, i + 1) == " ") {
+            temp += " "
+         } 
+         else {
+            temp += "_"
+         }
+      }
+      $(".hard").text(temp)
+   })
+}
+
 // Reset function
 function reset() {
    temp = ""
@@ -130,6 +147,19 @@ function resetMed() {
    lives = 10
    score = 0
    generateMedium(mediumWords)
+   updateScore()
+   liveCount(10)
+   $(".waves-effect").removeClass("disabled")
+   $(".wrapper").removeClass("scale-in")
+}
+
+function resetHard() {
+   temp = ""
+   actual = ""
+   guessed = []
+   lives = 10
+   score = 0
+   generateHard(hardWords)
    updateScore()
    liveCount(10)
    $(".waves-effect").removeClass("disabled")

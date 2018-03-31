@@ -26,7 +26,15 @@ $(document).ready(function() {
     //     
     $(".wrapper").click(function() {
         $(".waves-effect").removeClass("disabled")
-        reset()
+        if($(this).hasClass("easy-mode")) {
+            reset()
+        }
+        else if($(this).hasClass("medium-mode")) {
+            resetMed()
+        } 
+        else {
+            resetHard()
+        }
     })
     
     //On-Screen Btn Pushed
@@ -53,12 +61,26 @@ $(document).ready(function() {
    //Game Mode Select
    $(".tab-easy").click(function() {
        level = ".easy"
+       $(".wrapper").removeClass("hard-mode")
+       $(".wrapper").removeClass("medium-mode")
+       $(".wrapper").addClass("easy-mode")
        reset()
    })
 
    $(".tab-medium").click(function() {
        level = ".medium"
+       $(".wrapper").removeClass("easy-mode")
+       $(".wrapper").removeClass("hard-mode")
+       $(".wrapper").addClass("medium-mode")
        resetMed()
+   })
+
+   $(".tab-hard").click(function() {
+    level = ".hard"
+    $(".wrapper").removeClass("easy-mode")
+    $(".wrapper").removeClass("medium-mode")
+    $(".wrapper").addClass("hard-mode")
+    resetHard()
    })
 
    //Final Calls
