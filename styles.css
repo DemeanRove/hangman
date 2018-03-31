@@ -34,6 +34,33 @@
       word-wrap: normal;
 }
 
+#easy p {
+      text-align: center;
+      font-family: 'Fascinate Inline';
+      font-size: 4.5em;
+      letter-spacing: 0.3em;
+      word-spacing: 0.6em;
+      word-wrap: normal;
+}
+
+#medium p {
+      text-align: center;
+      font-family: 'Fascinate Inline';
+      font-size: 4.5em;
+      letter-spacing: 0.3em;
+      word-spacing: 0.6em;
+      word-wrap: normal;
+}
+
+#hard p {
+      text-align: center;
+      font-family: 'Fascinate Inline';
+      font-size: 4.5em;
+      letter-spacing: 0.3em;
+      word-spacing: 0.6em;
+      word-wrap: normal;
+}
+
 .wrapper {
       align-items: center;
       justify-content: center;

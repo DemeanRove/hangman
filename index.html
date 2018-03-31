@@ -27,9 +27,9 @@
             <div class="divider"></div>
             <div class="nav-content z-depth-1"> <!-- Difficulty Navbar -->
                   <ul class="tabs tabs-transparent">
-                        <li class="tab active"><a href="#">Easy</a></li>
-                        <li class="tab"><a href="#">Medium</a></li>
-                        <li class="tab"><a href="#">Hard</a></li>
+                        <li class="tab tab-easy active"><a href="#easy">Easy</a></li>
+                        <li class="tab tab-medium"><a href="#medium">Medium</a></li>
+                        <li class="tab tab-hard"><a href="#hard">Hard</a></li>
                   </ul>
             </div>
       </nav>
@@ -39,9 +39,14 @@
                   <div class="col s12 game scale-transition scale-out">
                         <p class="score"></p>
                         <p class="flow-text tooltipped data-position="bottom" data-tooltip="Keyboard input works too!"" style="color: red"></p>
-                        <p class="flow-text"></p>
+                        <div id="easy">
+                              <p class="flow-text easy"></p>
+                        </div>
+                        <div id="medium">
+                              <p class="flow-text medium"></p>
+                        </div>
                         <div class="wrapper scale-transition scale-out">
-                              <a class="btn-large pulse"><i class="material-icons left">refresh</i>Retry</a>
+                              <a class="btn-large pulse"><i class="material-icons left">refresh</i>Play Again</a>
                         </div>
                   </div>
                   <div class="col s2 m1"><a href="javascript: void(0)" class="waves-effect waves-light scale-transition scale-out">A</a></div>
@@ -76,5 +81,6 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
       <script src="app.js"></script>
+      <script src="mechanics.js"></script>
 </body>
 </html>
